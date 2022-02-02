@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.5);
+  }
+
+.checkout-steps > div {
+    border-top: 0.3rem #c0c0c0 solid;
+    color: white;
+    flex: 1;
+    padding: 0.7rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .checkout-steps > div.active {
+    border-top-color:blue;
+    color:  blue;
+    text-align: center;
+  }
+
+  .checkout-steps > div {
+    text-align: center;
+  }

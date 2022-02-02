@@ -1,0 +1,24 @@
+.h-fond {
+    background: linear-gradient(rgb(34, 177, 34), white);
+    width:100%;
+	height:180px;
+}
+
+.m-img {
+    height: 110px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.h1-header {
+    text-align: center;
+    margin-top: 0;
+}
+
+.h-fond2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem ;
+}

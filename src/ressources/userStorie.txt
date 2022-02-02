@@ -1,0 +1,11 @@
+CheckPoint 4
+
+Recherche ton joueur 
+
+User Storie : 
+En tant qu'utilisateur, je peux choisir le championnat que je désire.
+En tant qu'utilisateur, je peux choisir le club dans le championnat que je viens de choisir.
+En tant qu'utilisateur, je peux voir le détail du club avec son stade et les joueurs.
+En tant qu'utilisateur, je peut voir le details des joueurs du clubs
+En tant qu'utilisateur, je peux modifier les détails du joueurs que je désire
+En tant qu'utilisateur, je peut supprimer et créer  un nouveau joueurs
