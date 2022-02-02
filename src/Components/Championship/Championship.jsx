@@ -18,7 +18,7 @@ const Championship = () => {
     <div>
       <CheckoutSteps step1></CheckoutSteps>
       <div className="m-body">
-        <h2>Choisie ton championnat</h2>
+        <h2 className='h2-c'>Choisie ton championnat</h2>
         {!ligue
           ? ''
           : ligue.map((ligues) => (

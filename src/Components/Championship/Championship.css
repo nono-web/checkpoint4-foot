@@ -7,7 +7,7 @@ body {
 .m-body {
     background-color: #FFFFFF;
     color: black;
-    height: 94vh;
+    height: 95vh;
     width: 90vw;
     margin: 5vh 5vw;
     text-align: center;
@@ -17,7 +17,7 @@ body {
 }
 
 .img-c {
-    width: 50px;
+    width: 55px;
     display: flex;
     margin: 0.8rem;
 }
@@ -27,6 +27,11 @@ body {
     border-radius: 2rem;
     background: linear-gradient(rgb(34, 177, 34), white) ;
     
+}
+
+.h2-c {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 600px) {
