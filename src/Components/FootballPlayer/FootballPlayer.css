@@ -1,0 +1,78 @@
+.m-body4 {
+    background-color: #FFFFFF;
+    color: black;
+    height:100%;
+    width: 90vw;
+    margin: 5vh 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-stadium {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    margin: 0.8rem;
+}
+
+.img-player {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 0.8rem;
+}
+
+.players {
+    border-radius: 2rem;
+    border: 1px solid rgb(34, 177, 34);
+    margin: 1rem;
+    
+}
+
+.container-player {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+}
+
+.button-player {
+        border: 1px solid black;
+        border-radius: 2rem;
+        background: linear-gradient(rgb(34, 177, 34), white);
+        margin: 1rem
+    }
+
+    @media screen and (min-width: 600px) {
+        .img-stadium {
+            width: 500px;
+            height: 500px;
+        }
+        .img-player {
+            width: 200px;
+            height: 200px;
+        }
+        .container-player {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr ;
+        }
+        .m-body4 {
+            height: 250vh;
+            width:90vw;
+        }
+      }
+
