@@ -57,11 +57,20 @@
         margin: 1rem
     }
 
+    .button-player:hover {
+        background: rgb(34, 177, 34);
+
+    }
+
     .button-player-reset {
         border: 1px solid black;
         border-radius: 2rem;
         background: linear-gradient(red, white);
         margin: 0.5rem;
+    }
+
+    .button-player-reset:hover {
+        background: red;
     }
 
     .buttton-create {
