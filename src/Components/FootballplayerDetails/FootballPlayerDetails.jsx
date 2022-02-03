@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import CheckoutSteps from '../Components/Navbar/CheckoutSteps';
+import CheckoutSteps from '../Navbar/CheckoutSteps';
 import axios from 'axios';
 import './FootballPlayerDetails.css'
 
 
-const FootballPlayerCreate = () => {
+const FootballPlayerDetails = () => {
 
 const { id } = useParams();
 const [detailsPlayer, setDetailsPlayer] = useState([]);
@@ -56,7 +56,7 @@ const handleChange = () => {
                   <p>Taille : {detailsPlayers.height}m</p>
                   <p>Poids : {detailsPlayers.weight}kg</p>
                   <p>Numero de Maillot actuel : {detailsPlayers.number}</p>
-                  <form>
+                  <form className='form-playerdetails'>
               <label htmlFor="maillot">
                 <input
                   id="maillot"
@@ -65,19 +65,19 @@ const handleChange = () => {
                   onChange={(e) => setNumber(e.target.value)}
                 />
               </label>
-              <button type="submit" onClick={handleChange}>Confirmé le changements</button>
+              <button type="button" onClick={handleChange}>Confirmé le changements</button>
             </form>
                   <p>Poste actuel : {detailsPlayers.post}</p>
-                  <form>
+                  <form className='form-playerdetails'>
               <label htmlFor="post">
                 <input
                   id="post"
                   type="text"
-                  placeholder="Modifier le post du joueur"
+                  placeholder="Modifier le poste du joueur"
                   onChange={(e) => setPost(e.target.value)}
                 />
               </label>
-              <button type="submit" onClick={handleChange}>Confirmé le changements</button>
+              <button type="button" onClick={handleChange}>Confirmé le changements</button>
             </form>
                 </div>
               ))}
@@ -88,4 +88,4 @@ const handleChange = () => {
     )
   };
 
-export default FootballPlayerCreate;
+export default FootballPlayerDetails;

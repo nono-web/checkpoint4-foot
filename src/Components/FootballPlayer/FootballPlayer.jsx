@@ -28,6 +28,11 @@ const FootballPlayer = () => {
     fetchDataPlayer();
   }, []);
 
+  const handleReset =async (id) => {
+    await axios.delete(`${process.env.REACT_APP_API_URL}/footballplayer/${id}`, [id]);
+    fetchDataPlayer();
+  };
+
   return (
     <div>
       <CheckoutSteps step1 step2 step3></CheckoutSteps>
@@ -50,19 +55,30 @@ const FootballPlayer = () => {
               ))}
         </div>
         <h2 className="h2-c">Joueur</h2>
-        <div className='container-player'>
-        {!player
+        <button className="buttton-create" onClick={() => navigator('/creationjoueur')}>Creer un nouveau Joueur</button>
+        <div className="container-player">
+          {!player
             ? ''
             : player.map((players) => (
-                <div className='players'>
+                <div className="players">
                   <img
                     className="img-player"
                     src={players.img}
                     alt={players.name}
                   />
-                  <p className='p-player'>Prenom : {players.firstname}</p>
-                  <p className='p-player'>Nom : {players.lastname}</p>
-                  <button className='button-player'  onClick={() => navigator(`/joueurs/${players.id}`)}> Details</button>
+                  <p className="p-player">Prenom : {players.firstname}</p>
+                  <p className="p-player">Nom : {players.lastname}</p>
+                  <button
+                    className="button-player"
+                    onClick={() => navigator(`/joueurs/${players.id}`)}
+                  >
+                    {' '}
+                    Details
+                  </button>
+                  <button
+                    className="button-player-reset"
+                    onClick={() => handleReset(players.id)}
+                  >Supprimer</button>
                 </div>
               ))}
         </div>

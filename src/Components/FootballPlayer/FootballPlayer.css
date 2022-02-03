@@ -57,6 +57,25 @@
         margin: 1rem
     }
 
+    .button-player-reset {
+        border: 1px solid black;
+        border-radius: 2rem;
+        background: linear-gradient(red, white);
+        margin: 0.5rem;
+    }
+
+    .buttton-create {
+        border-radius: 2rem;
+        margin:1rem ;
+        background: linear-gradient(blue, white);
+    }
+
+    .buttton-create:hover {
+        background: linear-gradient(rgb(34, 177, 34), white);
+    }
+
+
+
     @media screen and (min-width: 600px) {
         .img-stadium {
             width: 500px;

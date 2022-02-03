@@ -1,0 +1,42 @@
+.m-body5 {
+    background-color: #FFFFFF;
+    color: black;
+    height:100%;
+    width: 90vw;
+    margin: 5vh 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-detailsplayer {
+    margin: 0.8rem;
+    width: 300px;
+    height: 300px;
+}
+
+p {
+    margin: 5px;
+}
+
+.form-playerdetails input {
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.form-playerdetails input::placeholder {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-playerdetails button {
+    border-radius: 2rem;
+    margin-bottom:1rem ;
+    background: linear-gradient(blue, white);
+}
+
+.form-playerdetails button:hover {
+    background: linear-gradient(rgb(34, 177, 34), white);
+}
